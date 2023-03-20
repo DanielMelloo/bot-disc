@@ -31,7 +31,8 @@ function getRandomDice(diceValue = 6){
 
 const dotenv = require('dotenv')
 dotenv.config()
-const {	TOKEN, CLIENT_ID, GUILD_ID } = process.env
+const {	TOKEN } = process.env
+// const {	TOKEN, CLIENT_ID, GUILD_ID } = process.env
 
 
 // =============== //
