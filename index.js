@@ -24,6 +24,25 @@ function getRandomDice(diceValue = 6){
 }
 
 
+// ============== //
+// Guild Atribute //
+// ============== //
+
+client.on("guildCreate",(guild) => {
+	console.log('entrou em um servidor')
+	console.log ('id da guilda que entre: ' + guild.id)
+	console.log ('Nome da guilda onde entrei: ' + guild.name)
+
+	servidores[guild.id] = {
+		connection: null,
+		dispatcher:null,
+		fila: [],
+		estouTocando: false
+	}
+
+})
+
+
 // ====== //
 // DotEnv //
 // ====== //
